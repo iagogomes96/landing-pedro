@@ -94,9 +94,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.4;
+            opacity: 0.7;
             /* Transparência para leitura */
-            filter: blur(3px);
+            filter: blur(1px);
             /* Leve desfoco */
         }
 
@@ -254,6 +254,7 @@
             .reveal-stamp.active {
                 transform: rotate(15deg) scale(1);
                 animation: stamp-pulse-desktop 2.5s ease-in-out infinite alternate;
+                animation-delay: 1.1s;
             }
         }
 
@@ -310,7 +311,8 @@
             </a>
 
             <div class="reveal reveal-delay-3 mt-6 text-sm text-gray-400 flex items-center gap-2">
-                <i class="fas fa-lock text-brand-accent text-xs"></i> Sigilo absoluto e acolhimento garantido
+                <i class="fas fa-lock text-brand-accent text-xs"></i> Sigilo absoluto • Acolhimento garantido • Apenas
+                para maiores de 18 anos.
             </div>
         </div>
     </header>
@@ -325,8 +327,8 @@
             <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
                 <article class="w-full md:w-1/2 reveal">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="src/img/pessoa-pensando.jpg">
-                        <img src="src/img/pessoa-pensando.jpg" alt="Pessoa em momento de reflexão e tristeza"
+                        <source media="(max-width: 768px)" srcset="src/img/cartomante-buzios.png">
+                        <img src="src/img/cartomante-buzios.png" alt="Pessoa em momento de reflexão e tristeza"
                             class="aspect-square rounded-2xl w-full object-cover shadow-2xl shadow-black/50 opacity-80 mix-blend-luminosity">
                     </picture>
                 </article>
@@ -354,7 +356,7 @@
             </div>
         </section>
 
-        <!-- Seção Sobre Reformulada -->
+        <!-- Seção Sobre -->
         <section class="py-24 px-4 md:px-8 bg-brand-primary/10 border-y border-brand-primary/30 overflow-hidden">
             <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
@@ -420,6 +422,7 @@
                         <source media="(max-width: 768px)" srcset="src/img/mesa-tarot.png">
                         <img src="src/img/mesa-tarot.png" alt="Mesa com cartas de Tarot, velas e elementos espirituais"
                             class="rounded-[2rem] w-full object-cover shadow-2xl relative z-10 border border-white/10 opacity-90 hover:opacity-100 transition-opacity duration-500">
+
                     </picture>
                 </div>
 
@@ -439,6 +442,7 @@
             </div>
         </section>
 
+        <!-- Seção de Serviços -->
         <section class="py-24 px-4 md:px-8">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16 reveal">
@@ -453,14 +457,15 @@
 
                     <!-- Card 1 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal relative overflow-hidden">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal relative overflow-hidden">
                         <div
                             class="absolute top-0 right-0 bg-brand-accent text-brand-bg text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider shadow-lg z-10">
                             Mais Procurado
                         </div>
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10">
-                            <i class="fas fa-heart text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/amarracao-amorosa.jpg" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white relative z-10">Amarração Amorosa</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed relative z-10">
@@ -471,10 +476,11 @@
 
                     <!-- Card 2 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal reveal-delay-1">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-1">
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)]">
-                            <i class="fas fa-leaf text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/limpeza-espiritual.avif" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Limpezas Espirituais</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed">
@@ -485,10 +491,11 @@
 
                     <!-- Card 3 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal reveal-delay-2">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-2">
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)]">
-                            <i class="fas fa-door-open text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/abertura-caminhos.avif" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Abertura de Caminhos</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed">
@@ -499,10 +506,11 @@
 
                     <!-- Card 4 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal">
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)]">
-                            <i class="fas fa-shield-alt text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/protecao-espiritual.jpg" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Proteção Espiritual</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed">
@@ -513,10 +521,11 @@
 
                     <!-- Card 5 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal reveal-delay-1">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-1">
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)]">
-                            <i class="fas fa-star-and-crescent text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/buzios-e-tarot.jpg" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Búzios e Tarot</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed">
@@ -527,10 +536,11 @@
 
                     <!-- Card 6 -->
                     <article
-                        class="service-card rounded-2xl p-8 flex flex-col items-center text-center aspect-square md:aspect-auto md:min-h-[300px] justify-center reveal reveal-delay-2">
+                        class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-2">
                         <div
-                            class="w-16 h-16 rounded-full bg-brand-bg border border-brand-accent flex items-center justify-center mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)]">
-                            <i class="fas fa-comment-dots text-brand-accent text-2xl"></i>
+                            class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
+                            <img src="src/img/servicos/consulta-personalizada.jpg" alt="Descrição da imagem"
+                                class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Consulta Personalizada</h3>
                         <p class="text-gray-400 text-sm font-light leading-relaxed">
@@ -838,10 +848,8 @@
     <footer class="border-t border-brand-primary/30 py-8 text-center bg-[#05080f]">
         <div class="container mx-auto px-4">
             <div
-                class="text-xs text-gray-500 font-light max-w-3xl mx-auto leading-relaxed flex flex-col gap-2 items-center">
-                <span>⚠️ Os resultados podem variar de pessoa para pessoa.</span>
-                <span>⚠️ Apenas para maiores de 18 anos.</span>
-                <span class="text-gray-400 font-medium">⚠️ Não oferecemos serviços gratuitos.</span>
+                class="text-xs text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed flex flex-col gap-2 items-center">
+                <span>⚠️ Os resultados podem variar de pessoa para pessoa • Não oferecemos serviços gratuitos ⚠️</span>
             </div>
             <div class="mt-8 flex flex-col items-center gap-2 text-sm text-gray-400">
                 <p>&copy; 2026 Luz do Tarot e Espiritualidade. Todos os direitos reservados.</p>
@@ -853,7 +861,7 @@
     </footer>
 
     <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" id="fab-whatsapp"
-        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-brand-accent text-brand-bg rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 opacity-0 pointer-events-none pulse-animation"
+        class="fixed bottom-6 right-6 z-50 w-20 h-20 bg-brand-accent text-brand-bg rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 opacity-0 pointer-events-none pulse-animation"
         aria-label="Contato via WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
