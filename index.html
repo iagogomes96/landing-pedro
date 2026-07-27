@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luz do Tarot e Espiritualidade | Transforme sua Vida Amorosa</title>
+    <title>Caminho da Espiritualidade | Transforme sua Vida Amorosa</title>
     <meta name="description"
         content="Especialista em espiritualidade, sabedoria ancestral e união de casais. Mais de 13 anos guiando jornadas de transformação e amor.">
 
@@ -210,16 +210,6 @@
             will-change: transform, opacity;
         }
 
-        /* Efeito de Carimbo de Escassez */
-        .reveal-stamp {
-            opacity: 0;
-            transform: rotate(0deg) scale(2);
-            /* Reto no mobile */
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            /* Atraso para o carimbo bater depois que a seção revelar */
-            transition-delay: 0.5s;
-        }
-
         .reveal-stamp.active {
             opacity: 0.85;
             /* Transparência aplicada */
@@ -244,19 +234,6 @@
             /* Pulso bem leve no mobile */
         }
 
-        /* Desktop: Carimbo Inclinado */
-        @media (min-width: 640px) {
-            .reveal-stamp {
-                transform: rotate(15deg) scale(2);
-
-            }
-
-            .reveal-stamp.active {
-                transform: rotate(15deg) scale(1);
-                animation: stamp-pulse-desktop 2.5s ease-in-out infinite alternate;
-                animation-delay: 1.1s;
-            }
-        }
 
         @keyframes stamp-pulse-desktop {
             0% {
@@ -276,12 +253,7 @@
 
     <header id="hero" class="hero-section text-center px-4 md:px-8 pt-10 pb-20">
         <div class="hero-bg">
-            <picture>
-                <!-- Mobile Image -->
-                <source media="(max-width: 768px)" srcset="src/img/casal-apaixonado.png">
-                <!-- Desktop Image -->
-                <img src="src/img/casal-apaixonado.png" alt="Casal apaixonado se abraçando" loading="eager">
-            </picture>
+            <img src="src/img/casal-apaixonado.avif" alt="Casal apaixonado se abraçando" loading="eager">
         </div>
 
         <div class="max-w-4xl mx-auto z-10 flex flex-col items-center">
@@ -289,13 +261,12 @@
             <div
                 class="reveal soft-pulse inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-accent/30 bg-brand-bg/50 backdrop-blur-sm text-sm font-medium text-gray-300 mb-8 shadow-[0_0_15px_rgba(212,169,44,0.15)]">
                 <span class="text-brand-accent">✨</span>
-                Mais de 13 anos de experiência
+                Mais de 20 anos de experiência
                 <span class="text-brand-accent">✨</span>
             </div>
 
             <h1 class="reveal reveal-delay-1 font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                Bem-vindos à Luz do <span class="text-brand-accent italic">Tarot</span> e <span
-                    class="text-brand-accent italic">Espiritualidade</span>
+                Bem-vindos ao <span class="text-brand-accent italic">Caminho da Espiritualidade</span>
             </h1>
 
             <p class="reveal reveal-delay-2 text-lg md:text-xl text-gray-300 mb-10 max-w-2xl font-light">
@@ -319,30 +290,31 @@
 
     <main>
         <section class="py-20 px-4 md:px-8 relative overflow-hidden">
-            <!-- Decorative blur element -->
             <div
                 class="absolute top-0 left-0 w-64 h-64 bg-brand-primary rounded-full filter blur-[100px] opacity-20 -translate-x-1/2 -translate-y-1/2">
             </div>
 
-            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
-                <article class="w-full md:w-1/2 reveal">
+            <div class="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 md:gap-20">
+                <article class="w-full lg:w-1/2 reveal">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="src/img/cartomante-buzios.png">
-                        <img src="src/img/cartomante-buzios.png" alt="Pessoa em momento de reflexão e tristeza"
-                            class="aspect-square rounded-2xl w-full object-cover shadow-2xl shadow-black/50 opacity-80 mix-blend-luminosity">
+                        <source media="(max-width: 400px)" srcset="src/img/cartomante-buzios-mobile.avif">
+                        <img src="src/img/cartomante-buzios.avif" alt="Pessoa em momento de reflexão e tristeza"
+                            class="rounded-2xl aspect-square sm:max-w-md sm:mx-auto md:mx-auto md:max-w-xl w-full object-cover shadow-2xl shadow-black/50 opacity-80 mix-blend-luminosity">
                     </picture>
                 </article>
 
-                <article class="w-full md:w-1/2 flex flex-col justify-center reveal reveal-delay-1">
+                <article class="w-full lg:w-1/2 flex flex-col justify-center reveal reveal-delay-1">
                     <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6">Eu sei que <span
                             class="text-brand-accent">dói demais</span></h2>
 
-                    <div class="space-y-4 text-gray-300 font-light leading-relaxed text-lg">
-                        <p>Quando a pessoa que você mais ama vai embora, parece que o chão some debaixo dos seus pés. O
+                    <div class="space-y-4 text-gray-300 font-light leading-relaxed text-lg text-justify">
+                        <p class="indent-6">Quando a pessoa que você mais ama vai embora, parece que o chão some debaixo
+                            dos seus pés. O
                             silêncio do celular, a cama fria, as lembranças que não param de voltar e invadir sua
                             mente...</p>
 
-                        <p>Você tenta seguir em frente, mas cada canto da casa lembra dela. Cada música, cada cheiro. E
+                        <p class="indent-6">Você tenta seguir em frente, mas cada canto da casa lembra dela. Cada
+                            música, cada cheiro. E
                             aquele aperto no peito que não passa, que tira o sono, que tira a vontade de viver e de
                             sorrir.</p>
 
@@ -362,54 +334,21 @@
 
                 <!-- Coluna de Texto e Features -->
                 <div class="w-full lg:w-1/2 reveal">
-                    <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6">Sobre a <span
-                            class="text-brand-accent">Luz do Tarot</span></h2>
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6">Sobre o <span
+                            class="text-brand-accent">Caminho da Espiritualidade</span></h2>
 
-                    <p class="text-gray-300 text-base leading-relaxed font-light mb-8">
-                        Com mais de 13 anos de experiência dedicados a ajudar pessoas a reconquistarem o amor
-                        verdadeiro, sou reconhecido pela seriedade, dedicação e resultados transformadores. Meu
-                        propósito é ser a ponte segura para a sua felicidade amorosa e espiritual. Cada trabalho é
-                        realizado com profunda ética, respeito ao livre arbítrio e forte comprometimento com você.
+                    <p
+                        class="indent-6 text-gray-300 md:text-lg lg:text-base leading-relaxed font-light mb-8 text-justify">
+                        Com mais de duas décadas de experiência unindo caminhos, meu propósito é ser a ponte segura para
+                        a sua paz espiritual e amorosa. Atuo na realização e no desmanche de trabalhos espirituais,
+                        unindo seriedade, ética e total respeito às suas escolhas para entregar resultados que realmente
+                        transformam vidas.
                     </p>
 
-                    <!-- Grid de Características (Inspirado na referência) -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        <article
-                            class="bg-[#0b1426] border border-white/5 p-4 md:p-5 rounded-xl hover:border-brand-accent/30 transition-colors flex flex-col items-center sm:items-start text-center sm:text-left">
-                            <i class="fas fa-heart text-brand-accent mb-2 text-xl"></i>
-                            <h4 class="font-bold text-white mb-1">Acolhimento</h4>
-                            <p class="text-xs text-gray-400 font-light leading-snug">Cada pessoa é tratada com empatia,
-                                respeito profundo e sem nenhum julgamento.</p>
-                        </article>
-
-                        <article
-                            class="bg-[#0b1426] border border-white/5 p-4 md:p-5 rounded-xl hover:border-brand-accent/30 transition-colors flex flex-col items-center sm:items-start text-center sm:text-left">
-                            <i class="fas fa-shield-alt text-brand-accent mb-2 text-xl"></i>
-                            <h4 class="font-bold text-white mb-1">Sigilo Absoluto</h4>
-                            <p class="text-xs text-gray-400 font-light leading-snug">Sua história e todos os seus dados
-                                ficam protegidos com total confidencialidade.</p>
-                        </article>
-
-                        <article
-                            class="bg-[#0b1426] border border-white/5 p-4 md:p-5 rounded-xl hover:border-brand-accent/30 transition-colors flex flex-col items-center sm:items-start text-center sm:text-left">
-                            <i class="fas fa-eye text-brand-accent mb-2 text-xl"></i>
-                            <h4 class="font-bold text-white mb-1">Clareza</h4>
-                            <p class="text-xs text-gray-400 font-light leading-snug">Orientação honesta e totalmente
-                                transparente em cada etapa do processo.</p>
-                        </article>
-
-                        <article
-                            class="bg-[#0b1426] border border-white/5 p-4 md:p-5 rounded-xl hover:border-brand-accent/30 transition-colors flex flex-col items-center sm:items-start text-center sm:text-left">
-                            <i class="fas fa-user-friends text-brand-accent mb-2 text-xl"></i>
-                            <h4 class="font-bold text-white mb-1">Acompanhamento</h4>
-                            <p class="text-xs text-gray-400 font-light leading-snug">Suporte contínuo lado a lado até
-                                que você alcance o resultado desejado.</p>
-                        </article>
-                    </div>
                 </div>
 
                 <!-- Coluna da Imagem com detalhe de borda -->
-                <div class="w-full lg:w-1/2 reveal reveal-delay-1 relative">
+                <div class="w-full md:w-4/5 lg:w-1/2 mx-auto reveal reveal-delay-1 relative">
                     <!-- Borda decorativa de destaque -->
                     <div
                         class="absolute -top-4 -left-4 md:-top-6 md:-left-6 w-32 h-32 border-t border-l border-brand-accent/60 rounded-tl-[40px] z-0">
@@ -419,8 +358,8 @@
                     </div>
 
                     <picture>
-                        <source media="(max-width: 768px)" srcset="src/img/mesa-tarot.png">
-                        <img src="src/img/mesa-tarot.png" alt="Mesa com cartas de Tarot, velas e elementos espirituais"
+                        <source media="(max-width: 400px)" srcset="src/img/mesa-tarot-mobile.avif">
+                        <img src="src/img/mesa-tarot.avif" alt="Mesa com cartas de Tarot, velas e elementos espirituais"
                             class="rounded-[2rem] w-full object-cover shadow-2xl relative z-10 border border-white/10 opacity-90 hover:opacity-100 transition-opacity duration-500">
 
                     </picture>
@@ -430,7 +369,7 @@
         </section>
 
         <section
-            class="py-16 px-4 text-center reveal bg-[url('src/img/cartas-tarot.jpg')] bg-cover bg-center relative bg-blend-overlay bg-brand-bg/90">
+            class="py-16 px-4 text-center reveal bg-[url('src/img/cartas-tarot.avif')] bg-cover bg-center relative bg-blend-overlay bg-brand-bg/90">
             <div class="max-w-3xl mx-auto relative z-10">
                 <h3 class="font-serif text-2xl md:text-3xl font-bold mb-4">Você merece ser amado(a) plenamente.</h3>
                 <p class="text-gray-300 mb-8 font-light text-lg">Dê o primeiro passo para a sua cura emocional e
@@ -459,12 +398,8 @@
                     <article
                         class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal relative overflow-hidden">
                         <div
-                            class="absolute top-0 right-0 bg-brand-accent text-brand-bg text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider shadow-lg z-10">
-                            Mais Procurado
-                        </div>
-                        <div
                             class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
-                            <img src="src/img/servicos/amarracao-amorosa.jpg" alt="Descrição da imagem"
+                            <img src="src/img/servicos/amarracao-amorosa.avif" alt="Descrição da imagem"
                                 class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white relative z-10">Amarração Amorosa</h3>
@@ -509,7 +444,7 @@
                         class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal">
                         <div
                             class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
-                            <img src="src/img/servicos/protecao-espiritual.jpg" alt="Descrição da imagem"
+                            <img src="src/img/servicos/protecao-espiritual.avif" alt="Descrição da imagem"
                                 class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Proteção Espiritual</h3>
@@ -524,7 +459,7 @@
                         class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-1">
                         <div
                             class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
-                            <img src="src/img/servicos/buzios-e-tarot.jpg" alt="Descrição da imagem"
+                            <img src="src/img/servicos/buzios-e-tarot.avif" alt="Descrição da imagem"
                                 class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Búzios e Tarot</h3>
@@ -539,7 +474,7 @@
                         class="service-card rounded-2xl p-6 h-full flex flex-col items-center text-center md:aspect-auto justify-center reveal reveal-delay-2">
                         <div
                             class="w-20 h-20 rounded-full bg-brand-bg border border-brand-accent mb-6 shadow-[0_0_15px_rgba(212,169,44,0.3)] relative z-10 overflow-hidden">
-                            <img src="src/img/servicos/consulta-personalizada.jpg" alt="Descrição da imagem"
+                            <img src="src/img/servicos/consulta-personalizada.avif" alt="Descrição da imagem"
                                 class="w-full h-full object-cover rounded-full" />
                         </div>
                         <h3 class="font-serif text-xl font-bold mb-3 text-white">Consulta Personalizada</h3>
@@ -583,7 +518,7 @@
                                     class="w-10 h-10 rounded-full bg-pink-900 text-white flex items-center justify-center font-bold">
                                     C</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Cláudia M.</h4>
+                                    <p class="font-bold text-white text-sm">Monica</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -596,7 +531,7 @@
                                     esperanças<span class="chat-time">14:33</span>
                                 </div>
                                 <div class="chat-bubble chat-bubble-sent">
-                                    Que maravilha, Cláudia! Fico muito feliz. O amor verdadeiro sempre encontra o
+                                    Que maravilha, Monica! Fico muito feliz. O amor verdadeiro sempre encontra o
                                     caminho de volta 💛<span class="chat-time">14:35 <i
                                             class="fas fa-check-double text-blue-400 text-[10px]"></i></span>
                                 </div>
@@ -615,7 +550,7 @@
                                     class="w-10 h-10 rounded-full bg-blue-800 text-white flex items-center justify-center font-bold">
                                     R</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Roberto S.</h4>
+                                    <p class="font-bold text-white text-sm">Roberto</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -647,7 +582,7 @@
                                     class="w-10 h-10 rounded-full bg-yellow-700 text-white flex items-center justify-center font-bold">
                                     A</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Amanda F.</h4>
+                                    <p class="font-bold text-white text-sm">Amanda</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -675,7 +610,7 @@
                                     class="w-10 h-10 rounded-full bg-emerald-800 text-white flex items-center justify-center font-bold">
                                     M</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Marcos & Lúcia</h4>
+                                    <p class="font-bold text-white text-sm">Marcos & Lúcia</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -705,7 +640,7 @@
                                     class="w-10 h-10 rounded-full bg-purple-800 text-white flex items-center justify-center font-bold">
                                     J</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Juliana T.</h4>
+                                    <p class="font-bold text-white text-sm">Juliana</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -718,7 +653,7 @@
                                     seu aviso.<span class="chat-time">11:21</span>
                                 </div>
                                 <div class="chat-bubble chat-bubble-sent">
-                                    Os oráculos não mentem, Juliana. Use essa sabedoria a seu favor sempre. 🔮<span
+                                    Os oráculos não mentem, Ju! Use essa sabedoria a seu favor sempre. 🔮<span
                                         class="chat-time">11:25 <i
                                             class="fas fa-check-double text-blue-400 text-[10px]"></i></span>
                                 </div>
@@ -737,7 +672,7 @@
                                     class="w-10 h-10 rounded-full bg-orange-700 text-white flex items-center justify-center font-bold">
                                     F</div>
                                 <div>
-                                    <h4 class="font-bold text-white text-sm">Fernanda L.</h4>
+                                    <p class="font-bold text-white text-sm">Fatima</p>
                                     <span class="text-xs text-green-400">online</span>
                                 </div>
                             </div>
@@ -750,7 +685,7 @@
                                     😭<span class="chat-time">21:15</span>
                                 </div>
                                 <div class="chat-bubble chat-bubble-sent">
-                                    Eu te falei que ia dar certo, Fernanda. O direciomento espiritual acalmou o coração
+                                    Eu te falei que ia dar certo, Fatima. O direciomento espiritual acalmou o coração
                                     dele. Confie no processo com calma ✨<span class="chat-time">21:20 <i
                                             class="fas fa-check-double text-blue-400 text-[10px]"></i></span>
                                 </div>
@@ -768,7 +703,7 @@
                 </div>
 
                 <!-- Hint for mobile -->
-                <p class="text-center text-xs text-gray-500 mt-4 md:hidden"><i class="fas fa-arrows-alt-h mr-1"></i>
+                <p class="text-center text-xs text-gray-300 mt-4 md:hidden"><i class="fas fa-arrows-alt-h mr-1"></i>
                     Arraste para os lados para ver mais</p>
             </div>
         </section>
@@ -781,13 +716,6 @@
 
             <div class="max-w-4xl mx-auto text-center relative z-10">
 
-                <!-- Escassez Copywriting com Pulso -->
-                <div
-                    class="reveal soft-pulse inline-flex items-center gap-2 px-5 py-2 rounded-full border border-red-500/30 bg-red-500/10 text-red-200 text-sm font-medium mb-8">
-                    <i class="fas fa-hourglass-half text-brand-accent animate-pulse"></i>
-                    Atendimento limitado — Poucas vagas restantes para esta semana
-                </div>
-
                 <h2 class="reveal reveal-delay-1 font-serif text-4xl md:text-6xl font-bold mb-6">
                     Não deixe o amor da sua vida <span class="text-brand-accent">escapar</span>
                 </h2>
@@ -798,13 +726,13 @@
                     espiritualmente, maiores as chances de trazer de volta e fixar quem você ama ao seu lado.
                 </p>
 
-                <!-- Box de Informações de Atendimento com Carimbo -->
+                <!-- Box de Informações de Atendimento-->
                 <div
                     class="reveal reveal-delay-3 bg-brand-primary/40 border border-brand-primary rounded-2xl p-6 md:p-8 mb-10 max-w-2xl mx-auto backdrop-blur-sm relative">
 
                     <p class="text-gray-300 mb-6 font-light">
-                        Atendimento com absoluto sigilo, de <strong class="text-white">segunda a sábado</strong>, das
-                        <strong class="text-white">8h às 22h</strong>. Os horários preenchem rápido, verifique a
+                        Atendimento com absoluto sigilo, <strong class="text-white">todos os dias</strong> das
+                        <strong class="text-white">7h às 23h</strong>. Os horários preenchem rápido, verifique a
                         disponibilidade.
                     </p>
                     <div
@@ -822,15 +750,10 @@
                         class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accentHover text-brand-bg font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 shadow-[0_0_25px_rgba(212,169,44,0.3)] hover:shadow-[0_0_35px_rgba(212,169,44,0.5)] hover:-translate-y-1">
                         <i class="fab fa-whatsapp text-2xl"></i> Falar agora no WhatsApp
                     </a>
-
-                    <!-- Carimbo de Alerta (Ocupação da Agenda) reposicionado na parte inferior -->
-                    <div
-                        class="reveal-stamp absolute -bottom-5 right-2 sm:-right-4 bg-[#080C16] border-[3px] border-red-500 text-red-500 font-black uppercase tracking-widest text-xs sm:text-sm px-4 py-2 rounded-lg z-20 shadow-[0_0_20px_rgba(239,68,68,0.3)]">
-                        85% da agenda<br>preenchida
-                    </div>
                 </div>
 
                 <!-- Redes Sociais -->
+                <!--
                 <div class="reveal reveal-delay-3 flex items-center justify-center gap-6 mt-8">
                     <a href="#"
                         class="w-12 h-12 rounded-full bg-brand-primary flex items-center justify-center text-white hover:bg-brand-accent hover:text-brand-bg transition-colors shadow-lg">
@@ -841,18 +764,15 @@
                         <i class="fab fa-tiktok text-xl"></i>
                     </a>
                 </div>
+                -->
             </div>
         </section>
     </main>
 
     <footer class="border-t border-brand-primary/30 py-8 text-center bg-[#05080f]">
         <div class="container mx-auto px-4">
-            <div
-                class="text-xs text-gray-500 font-medium max-w-3xl mx-auto leading-relaxed flex flex-col gap-2 items-center">
-                <span>⚠️ Os resultados podem variar de pessoa para pessoa • Não oferecemos serviços gratuitos ⚠️</span>
-            </div>
             <div class="mt-8 flex flex-col items-center gap-2 text-sm text-gray-400">
-                <p>&copy; 2026 Luz do Tarot e Espiritualidade. Todos os direitos reservados.</p>
+                <p>&copy; 2026 Caminho da Espiritualidade. Todos os direitos reservados.</p>
                 <p>
                     Desenvolvido por <strong class="text-white tracking-wider">Nebulabs</strong>
                 </p>
@@ -861,7 +781,7 @@
     </footer>
 
     <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" id="fab-whatsapp"
-        class="fixed bottom-6 right-6 z-50 w-20 h-20 bg-brand-accent text-brand-bg rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 opacity-0 pointer-events-none pulse-animation"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-brand-accent text-brand-bg rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 opacity-0 pointer-events-none pulse-animation"
         aria-label="Contato via WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -870,30 +790,29 @@
         document.addEventListener('DOMContentLoaded', () => {
 
             // --- Lógica do Botão Flutuante do WhatsApp ---
-            const heroSection = document.getElementById('hero');
             const fab = document.getElementById('fab-whatsapp');
+            // Seleciona a Hero e o Footer
+            const elementsToHideFab = document.querySelectorAll('#hero, footer');
 
-            if (heroSection && fab) {
-                // Usa IntersectionObserver para verificar se a Hero está na tela
-                const heroObserver = new IntersectionObserver((entries) => {
+            if (fab && elementsToHideFab.length > 0) {
+                const fabObserver = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            // Se a hero está visível, esconde o botão
+                            // Se a hero ou o footer estiverem na tela, esconde o botão
                             fab.classList.add('opacity-0', 'pointer-events-none');
                         } else {
-                            // Se passou da hero, mostra o botão
+                            // Se não estiverem, mostra o botão
                             fab.classList.remove('opacity-0', 'pointer-events-none');
                         }
                     });
                 }, {
-                    threshold: 0.1 // Dispara quando 10% da hero entra/sai
+                    threshold: 0.1 // Dispara quando 10% do elemento entra/sai
                 });
 
-                heroObserver.observe(heroSection);
+                elementsToHideFab.forEach(el => fabObserver.observe(el));
             }
 
             // --- Lógica de Animação Reveal no Scroll ---
-            // Adicionamos o .reveal-stamp à mesma lógica para que ele faça o efeito de carimbo ao aparecer
             const revealElements = document.querySelectorAll('.reveal, .reveal-stamp');
 
             const revealObserver = new IntersectionObserver((entries, observer) => {
